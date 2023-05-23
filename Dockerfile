@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 RUN apt-get update 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # port number
 EXPOSE 80
