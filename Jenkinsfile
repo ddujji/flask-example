@@ -3,7 +3,7 @@ node {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("peanutbutterrrrrr/flask-example")
+         app = docker.build("gasbugs/flask-example")
          
      }
      stage('Push image') {
@@ -15,7 +15,7 @@ node {
 }
 
 stage('Build image') {
-  app = docker.build("peanutbutterrrrrr/flask-example")
+  app = docker.build("gasbugs/flask-example")
 }
 
 stage('Push image') {
