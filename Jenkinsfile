@@ -3,7 +3,7 @@ node {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("ddujji / flask-example")
+         app = docker.build("peanutbutterrrrrr/echo_test")
          
      }
      stage('Push image') {
@@ -15,7 +15,7 @@ node {
 }
 
 stage('Build image') {
-  app = docker.build("ddujji / flask-example")
+  app = docker.build("peanutbutterrrrrr/echo_test")
 }
 
 stage('Push image') {
